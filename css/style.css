@@ -128,58 +128,58 @@ main {
   grid-gap: 20px;
 }
 
-.grid-item {
+.grid-section {
   margin-top: 20px;
   border: none;
   text-align: center;
   padding: 10px;
 }
 
-.grid-item h1 {
+.grid-section h1 {
   color: #fff;
 
 }
 
-.grid-item p {
+.grid-section p {
   color: #fff;
   font-weight:lighter;
 }
 
 
-.grid-item:nth-child(odd) {
+.grid-section:nth-child(odd) {
   border-right: 5px solid #66fcf1;
 }
 
-.grid-item:nth-child(even) {
+.grid-section:nth-child(even) {
   text-align: left;
 }
 
-.nested-grid {
+.grid-nest {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr 1fr;
 }
 
-.nested-grid-item {
+.grid-nest-section {
   border: 5px solid #45a29e;
   text-align: center;
   margin: 15px;
   height: 400px;
 }
 
-.nested-grid a {
+.grid-nest a {
     text-decoration: none;
     color: #fff;
     opacity: 0.5;
 
 }
 
-.nested-grid a:hover {
+.grid-nest a:hover {
   opacity: 1;
 
 }
 
-.nested-grid-item img {
+.grid-nest-section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -187,7 +187,7 @@ main {
   z-index: 0;
 }
 
-.nested-grid-item h1 {
+.grid-nest-section h1 {
   position: absolute;
   margin-top: 250px;
   background-color: #45a29e; 
@@ -195,7 +195,7 @@ main {
   z-index: 1;
 }
 
-.nested-grid-item h3 {
+.grid-nest-section h3 {
   position: absolute;
   margin-top: 100px;
   background-color: #45a29e; 
@@ -203,11 +203,11 @@ main {
   z-index: 1;
 }
 
-.nested-grid-item:nth-child(1) {
+.grid-nest-section:nth-child(1) {
   grid-column: span 2;
 }
 
-.nested-grid-item p {
+.grid-nest-section p {
   margin: 0;
   font-size: 14px;
   color: #fff;
@@ -217,7 +217,7 @@ main {
   font-size: 24px;
   text-align: left;
 }
-.small-height {
+.small {
   height: 200px; 
 }
 
